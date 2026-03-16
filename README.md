@@ -87,7 +87,7 @@ Muncul otomatis saat timer habis — langsung bisa mulai istirahat atau tutup.
 ### Setup
 
 ```bash
-git clone https://github.com/username/fun-pomodoro
+git clone https://github.com/lrnz45/fun-pomodoro
 cd fun-pomodoro
 npm install
 ```
