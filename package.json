@@ -1,0 +1,51 @@
+{
+  "name": "fun-pomodoro",
+  "displayName": "fun-pomodoro",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:pomodoro.start",
+    "onCommand:pomodoro.stop",
+    "onCommand:pomodoro.reset",
+    "onCommand:pomodoro.config"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "pomodoro.start",  "title": "Pomodoro: Mulai" },
+      { "command": "pomodoro.stop",   "title": "Pomodoro: Stop" },
+      { "command": "pomodoro.reset",  "title": "Pomodoro: Reset" },
+      { "command": "pomodoro.config", "title": "Pomodoro: Kustomisasi" }
+    ],
+    "configuration": {
+      "title": "Fun Pomodoro",
+      "properties": {
+        "pomodoro.workMinutes":  { "type": "number", "default": 25 },
+        "pomodoro.breakMinutes": { "type": "number", "default": 5  },
+        "pomodoro.emoji":        { "type": "string", "default": "🍅" }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.56.1",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
