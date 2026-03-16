@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # fun-pomodoro README
 
 This is the README for your extension "fun-pomodoro". After writing up a brief description, we recommend including the following sections.
@@ -242,4 +241,3 @@ MIT © 2025 — bebas dipakai, dimodifikasi, dan didistribusikan.
 ---
 
 <p align="center">Dibuat dengan ☕ dan sedikit prokrastinasi</p>
->>>>>>> aa185ed8a897edbecd6149e27ecde1da52d975b3
